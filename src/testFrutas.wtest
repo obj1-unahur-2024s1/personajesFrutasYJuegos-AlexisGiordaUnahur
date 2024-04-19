@@ -1,0 +1,15 @@
+import personajes.*
+import juegos.*
+import frutas.*
+
+test "manzana puede ser rojo - verde - amarillo" {
+	manzana.color(rojo)
+	assert.equals(rojo, manzana.color())
+	
+	manzana.color(verde)
+	assert.equals(verde, manzana.color())
+	
+	manzana.color(amarillo)
+	assert.equals(amarillo, manzana.color())
+}
+

@@ -1,0 +1,26 @@
+import personajes.*
+import juegos.*
+import frutas.*
+
+test "agregar actividades hechas a martin" {
+	martin.practicarDeporte(futbol, 50)
+	martin.practicarDeporte(basquet, 10)
+	
+	assert.equals(2,martin.actividadesHechas().size())
+}
+
+test "comer manzana verde"{
+	manzana.color(verde)
+	martin.comprar(manzana)
+	martin.comer()
+	
+	assert.equals(107, martin.energia())
+}
+
+test "energia de maria"{
+	assert.equals(214, maria.energia())
+}
+
+test "alexis no esta feliz"{
+	assert.notThat(alexis.estaFeliz())
+}
